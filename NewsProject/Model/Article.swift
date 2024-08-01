@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct NewsAPIResponse: Codable {
-    let articles: [Article]
-}
-
 struct Article: Identifiable, Codable {
     let id = UUID()
     let title: String

@@ -24,4 +24,3 @@ struct BookmarksView: View {
         .navigationTitle("Bookmarks")
     }
 }
-

@@ -21,7 +21,9 @@ class NewsViewModel: ObservableObject {
     
     func fetchArticles() {
         newsService.fetchArticles(for: category) { [weak self] articles in
-            self?.articles = articles ?? []
+            DispatchQueue.main.async {
+                self?.articles = articles ?? []
+            }
         }
     }
     
